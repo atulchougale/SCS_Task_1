@@ -205,6 +205,16 @@ main{
     border-radius: 5px;
 }
 
+.about_us h2 {
+    font-size: 32px;
+    font-weight: 900 !important;
+}
+
+.about_us h3 {
+    font-size: 32px;
+    font-weight: 800 !important;
+}
+
 
 .about_img {
     padding: 25px;
@@ -229,16 +239,34 @@ p{
 
 .story {
     margin: 20px auto 0!important;
-    box-shadow: 0px 0px 11px #0000001f;
+    
     color: orangered;
-    border-radius: 5px;
+    
+}
+
+.story h2 {
+    font-size: 32px;
+    font-weight: 900 !important;
 }
  
 .mission {
     margin: 20px auto 0!important;
-    box-shadow: 0px 0px 11px #0000001f;
+    
     color: orangered;
-    border-radius: 5px;
+    
+}
+
+.mission h2 {
+    font-size: 32px;
+    font-weight: 900 !important;
+}
+
+.line{
+    background-color: orangered;
+    height: 200px;
+    width: 0px;
+    border: 2px solid orangered;
+    border-radius: 12px;
 }
 
 .choose{
@@ -246,6 +274,11 @@ p{
     box-shadow: 0px 0px 11px #0000001f;
     color: orangered;
     border-radius: 5px;
+}
+
+.choose h2 {
+    font-size: 32px;
+    font-weight: 900 !important;
 }
 
 .coll {
@@ -469,13 +502,14 @@ padding: 25px;
     margin: 0 auto 40px;
 }
 
-.section__header h1 {
+.section__header h2 {
     font-size: 32px;
     font-weight: 900;
+    color: orangered;
 }
 .heading-mgn {
     margin-bottom: 20px;
-    color: orangered;
+    color: rgb(7, 7, 7);
 }
 .contact_form {
     margin: 50px auto 0;
@@ -513,4 +547,17 @@ padding: 25px;
 .googleMap {
     height: 450px;
     margin: 50px 0 0 0;
+}
+
+.choose1{
+    margin: 30px auto 0!important;
+    
+    color: orangered;
+    
+}
+
+.choose1 h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: orangered;
 }
