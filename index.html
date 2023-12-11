@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media.css" />
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -19,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>FOODII</title>
   </head>
   <body>
@@ -50,16 +52,27 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about_us">About Us</a>
+              <a class="nav-link" href="./products.html">Order Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Service.html">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
           </ul>
           <form class="d-flex">
+            <button
+              class="btn btn-outline-dark me-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Profile
+            </button>
             <input
               class="form-control me-2"
               type="search"
@@ -75,6 +88,21 @@
     </nav>
 
     <main>
+      <div class="home_cont">
+        <div class="home_cont2">
+          <h1> FOODII</h1>
+          <h2>Welcome to a world of flavors !!</h2>
+          <h3>"Where every dish tells a story. Join us on a culinary journey that delights the senses. 🍽️✨ #FoodiiExperience"</h3>
+          <div class="check_menu m-3">
+            <a class="text-decoration-none" href="./products.html"
+              ><button type="button" class="btn btn-secondary">
+                Order Now
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -116,53 +144,51 @@
         </div>
         <div class="carousel-inner at">
           <div class="carousel-item active">
-            <img src="./images/hyd_biryani.jpg" class="d-block w-75" alt="" />
-            <div class="d-none d-md-block cap">
+            <div class="d-md-block cap">
               <h3>Delicious Delivered</h3>
-              <p>
-                Bringing Your Favorites to Your Doorstep!
-              </p>
+              <p>Bringing Your Favorites to Your Doorstep!</p>
             </div>
+            <img src="./images/hyd_biryani.jpg" class="d-block w-100" alt="" />
           </div>
           <div class="carousel-item">
+            <div class="cap d-md-block">
+              <h3>From Kitchen to Yours</h3>
+              <p>Fast, Fresh, and Fabulous Delivery!</p>
+            </div>
             <img
               src="./images/masala_dosa (1).jpg"
-              class="d-block w-75"
+              class="d-block w-100"
               alt=""
             />
-            <div class="cap d-none d-md-block">
-              <h3>From Kitchen to Yours</h3>
-              <p>
-                Fast, Fresh, and Fabulous Delivery!
-              </p>
-            </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/chiken_masala.jpg" class="d-block w-75" alt="" />
-            <div class="cap d-none d-md-block">
+            <div class="cap d-md-block">
               <h3>Good Food, Fast Mood</h3>
-              <p>
-                Unwrap the Goodness at Your Door!
-              </p>
+              <p>Unwrap the Goodness at Your Door!</p>
             </div>
+            <img
+              src="./images/chiken_masala.jpg"
+              class="d-block w-100"
+              alt=""
+            />
           </div>
           <div class="carousel-item">
-            <img src="./images/tambda_pandhara.jpg" class="d-block w-75" alt="" />
-            <div class="cap d-none d-md-block">
+            <div class="cap d-md-block">
               <h3>Dine In, Delivered</h3>
-              <p>
-                Your Culinary Journey Starts Here!
-              </p>
+              <p>Your Culinary Journey Starts Here!</p>
             </div>
+            <img
+              src="./images/tambda_pandhara.jpg"
+              class="d-block w-100"
+              alt=""
+            />
           </div>
           <div class="carousel-item">
-            <img src="./images/misal_pav.jpg" class="d-block w-75" alt="" />
-            <div class="cap d-none d-md-block">
+            <div class="cap d-md-block">
               <h3>Flavors On-Demand</h3>
-              <p>
-                Where Your Favorites Come to You!
-              </p>
+              <p>Where Your Favorites Come to You!</p>
             </div>
+            <img src="./images/misal_pav.jpg" class="d-block w-100" alt="" />
           </div>
         </div>
         <button
@@ -186,7 +212,9 @@
       </div>
 
       <div class="check_menu m-3">
-        <button type="button" class="btn btn-secondary">Checkout Menu</button>
+        <a class="text-decoration-none" href="./products.html"
+          ><button type="button" class="btn btn-secondary">Order Now</button></a
+        >
       </div>
 
       <div class="container-fluid special_main">
@@ -196,94 +224,283 @@
           </div>
           <div class="slider">
             <div class="slide-track">
-              <div class="slide_cust row  shadow-lg">
-                <img src="./images/Ambur-Chicken-Biryani.jpg" alt="image 1">
+              <div class="slide_cust row shadow-lg">
+                <img src="./images/Ambur-Chicken-Biryani.jpg" alt="image 1" />
                 <h5>Ambur Chicken Biryani</h5>
               </div>
-              <div class="slide_cust row ">
-                <img src="./images/tambda_pandhara.jpg" alt="image 2">
+              <div class="slide_cust row">
+                <img src="./images/tambda_pandhara.jpg" alt="image 2" />
                 <h5>Tambada Pandhara</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/paneer-butter-masala.jpg" alt="image 3">
+                <img src="./images/paneer-butter-masala.jpg" alt="image 3" />
                 <h5>Paneer Butter Masala</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/Handi-chicken.jpg" alt="">
-                <h5>Chicken Handi</h5> 
-               </div>
+                <img src="./images/Handi-chicken.jpg" alt="" />
+                <h5>Chicken Handi</h5>
+              </div>
               <div class="slide_cust row">
-                <img src="./images/hyd_biryani.jpg" alt="image 4">
+                <img src="./images/hyd_biryani.jpg" alt="image 4" />
                 <h5>Hyadrabadi Biryani</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/ChickenManchurian.jpg" alt="image 5">
+                <img src="./images/ChickenManchurian.jpg" alt="image 5" />
                 <h5>Chicken Manchurian</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/Rava-Uttapam.jpg" alt="image 6">
+                <img src="./images/Rava-Uttapam.jpg" alt="image 6" />
                 <h5>Rava Uttapam</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/kolhapuri-kat-wada.jpg" alt="image 7">
+                <img src="./images/kolhapuri-kat-wada.jpg" alt="image 7" />
                 <h5>Kolhapuri kat Wada</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/mysore-bonda.jpg" alt="image 7">
+                <img src="./images/mysore-bonda.jpg" alt="image 7" />
                 <h5>Mysore Bonda</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/masala_dosa (1).jpg" alt="image 7">
+                <img src="./images/masala_dosa (1).jpg" alt="image 7" />
                 <h5>Masala Dosa</h5>
               </div>
               <div class="slide_cust row">
-                <img src="./images/veg_biryani.jpg" alt="image 7">
+                <img src="./images/veg_biryani.jpg" alt="image 7" />
                 <h5>Veg Biryani</h5>
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
-      <div id="about_us" class="about_us container row rounder m-4">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 about_img">
-            <img src="./images/about_us.jpg" alt="" class="rounder">
+      <div class="container row rounder m-4 coll1 p-3">
+        <h1 class="text-center">Testimonials</h1>
+        <div
+          class="container text-center m-2 testimonials col-lg-4 col-md-6 col-xl-4"
+        >
+          <img src="./images/test_m-1.jpg" alt="test_m-1" />
+          <h3>John S. - Food Lover</h3>
+          <p class="heading-mgn">
+            "I'm constantly amazed by the variety and quality of dishes from
+            FOODII. Each bite is a journey of flavors, and the delivery is
+            always on time. My taste buds thank you!"
+          </p>
         </div>
 
-
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 about_desc">
-          <h2>ABOUT US</h2>
-          <h3>We Deliver Delicious FOOD</h3>
-          <h5 class="heading-mgn">Welcome to FOODII, your go-to destination for delicious and convenient food delivery. We are passionate about connecting people with a diverse range of cuisines, right at their doorstep.</h5>
-      </div>
-      </div>
-
-      <div class="container row rounder m-4 coll p-3">
-        <div class="container-fluid m-3  story col-5 m-2">
-          <h2>Our Story</h2>
-          <h5 class="heading-mgn">Founded in 2023, Food Delivery Express started with a simple mission: to make food delivery fast, easy, and enjoyable for everyone. What began as a small team of food enthusiasts has now grown into a community dedicated to delivering culinary delights to your home or office.</h5>
+        <div
+          class="container text-center m-2 testimonials col-lg-4 col-md-6 col-xl-4"
+        >
+          <img src="./images/test-f-2.jpg" alt="test_m-1" />
+          <h3>Emily M. - Busy Professional</h3>
+          <p class="heading-mgn">
+            "As a busy professional, I rely on FOODII for quick and delicious
+            meals. The convenience of ordering and the lightning-fast delivery
+            make my hectic days a bit more manageable. Highly recommended!"
+          </p>
         </div>
-        <div class="line col-1"></div>
-  
-        <div class="container-fluid m-3  mission col-5 m-2">
-          <h2>Our Mission</h2>
-          <h5 class="heading-mgn">At Food Delivery Express, our mission is to redefine the dining experience by providing a seamless and delightful journey from order to delivery. We strive to offer a diverse menu, prompt service, and a commitment to quality that ensures your satisfaction with every bite.</h5>
+
+        <div
+          class="container text-center m-2 testimonials col-lg-4 col-md-6 col-xl-4"
+        >
+          <img src="./images/test_m-3.png" alt="test_m-1" />
+          <h3>Mike G. - Repeat Customer</h3>
+          <p class="heading-mgn">
+            "FOODII has won me over as a loyal customer. The user-friendly app,
+            reliable delivery, and consistently delicious meals keep me coming
+            back. It's the only food delivery service I trust."
+          </p>
+        </div>
+
+        <div
+          class="container text-center m-2 testimonials col-lg-4 col-md-6 col-xl-4"
+        >
+          <img src="./images/test_m-4.jpeg" alt="test_m-1" />
+          <h3>David L. - Foodie Explorer</h3>
+          <p class="heading-mgn">
+            "I consider myself a foodie, and FOODII has never disappointed. The
+            range of cuisines and the attention to detail in every dish are
+            impressive. It's become my go-to for exploring culinary delights
+            without leaving home."
+          </p>
+        </div>
+
+        <div
+          class="container text-center m-2 testimonials col-lg-4 col-md-6 col-xl-4"
+        >
+          <img src="./images/test_f-5.webp" alt="test_m-1" />
+          <h3>Jessica H. - Occasional Indulger</h3>
+          <p class="heading-mgn">
+            "I don't order often, but when I do, it's from FOODII. The
+            occasional indulgence is made extra special with their gourmet
+            offerings. The decadent desserts are my weakness!"
+          </p>
+        </div>
+
+        <div
+          class="container text-center m-2 testimonials col-lg-4 col-md-6 col-xl-4"
+        >
+          <img src="./images/test_m-6.jpeg" alt="test_m-1" />
+          <h3>Alex R. - Health Enthusiast</h3>
+          <p class="heading-mgn">
+            "Finding healthy yet tasty options used to be a challenge until I
+            discovered FOODII. The fresh ingredients and diverse menu keep me on
+            track with my fitness goals. It's like having a personal chef at my
+            fingertips!"
+          </p>
         </div>
       </div>
-
-      <div class="container m-3  choose text-center">
-        <h2>Why Choose Us?</h2>
-        <h5 class="heading-mgn">• Wide Variety: Explore a diverse menu with options for every palate.<br>
-           • Quick Delivery: Enjoy prompt and reliable delivery services.<br>
-           • Quality Assurance: We prioritize quality to ensure a delightful dining experience.<br>
-           • User-Friendly Platform: Order with ease through our user-friendly website and mobile app.<br>
-           • Customer Support: Our dedicated support team is ready to assist you with any queries.</h5>
-    </div >
-     
     </main>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content modal_bg rounded-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="imag">
+                <img src="https://i.ibb.co/JBC9548/profile.jpg" alt="" />
+                <div class="bt">
+                  <div class="form-element">
+                    <div class="check_menu m-3">
+                      <button type="button" class="btn btn-secondary">
+                        Edit Profile
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-element">
+                    <div class="check_menu m-3">
+                      <a class="text-decoration-none" href="./index.html"
+                        ><button type="button" class="btn btn-secondary">
+                          Logout
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Full Name :-</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Mobile No.:-</label
+                >
+                <input
+                  type="phone"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address :-</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div>
+                <h3>Gender:-</h3>
 
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                  />
+                  <label class="form-check-label" for="male"> Male </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                  <label class="form-check-label" for="female"> Female </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="other"
+                    value="other"
+                  />
+                  <label class="form-check-label" for="other"> Other </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password :-</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Address :-</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </form>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="full-footer">
       <div class="container">
@@ -294,21 +511,21 @@
               src="https://i.postimg.cc/Vs3yTqKx/foodii.png"
               alt="Foodii Logo"
             />
-            <p>
+            <p style="color: orange !important">
               Foodii is a food delivery app
               <a href="#" class="text-decoration-none">Read more</a>
             </p>
             <div class="icon">
-              <a href="https://www.facebook.com/"
+              <a href="https://www.facebook.com/" target="_blank"
                 ><i class="fab fa-facebook-square"></i
               ></a>
-              <a href="https://www.google.com/"
+              <a href="https://www.google.com/" target="_blank"
                 ><i class="fab fa-google-plus-square"></i
               ></a>
-              <a href="https://www.twitter.com/"
+              <a href="https://www.twitter.com/" target="_blank"
                 ><i class="fab fa-twitter-square"></i
               ></a>
-              <a href="https://www.instagram.com/"
+              <a href="https://www.instagram.com/" target="_blank"
                 ><i class="fab fa-instagram"></i
               ></a>
             </div>
