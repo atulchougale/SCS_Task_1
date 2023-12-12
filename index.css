@@ -263,6 +263,22 @@ main{
     height: 60px;
 }
 
+.check_menu1 button {
+    background-color: #fff;
+    color: orangered;
+    width: 180px;
+    height: 60px;
+    border-radius: 0 31px 31px 31px;
+    
+}
+
+.check_menu1 button:hover {
+    background-color:  orangered  ;
+    border: 1.5px solid #fff;
+    color:#fff;
+    width: 200px;
+    height: 60px;
+}
 
 .coll1 {
     margin: 20px auto 0!important;
