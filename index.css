@@ -128,9 +128,12 @@ main{
 }
 .icon a {
     margin-right: 10px;
+    transition: transform 0.8s ease;
 }
 .icon a:hover {
     color: #fff;
+    transform: rotate(360deg);
+    scale: 1.5;
 }
 .margi {
     margin-top: 18px;
@@ -145,6 +148,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 5px;
+    font-size: 30px;
 }
 
 /* =====================main home page  ============================= */
